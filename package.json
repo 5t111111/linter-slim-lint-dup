@@ -1,0 +1,32 @@
+{
+  "name": "linter-slim-lint",
+  "main": "./lib/linter-slim-lint",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "repository": "https://github.com/atom/linter-slim-lint",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "configSchema": {
+    "executablePath": {
+      "default": "slim-lint",
+      "description": "Path to slim-lint executable",
+      "type": "string"
+    }
+  },
+  "dependencies": {
+    "atom-linter": "^8.0.0",
+    "atom-package-deps": "^4.0.1",
+    "escape-html": "^1.0.3"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  }
+}
